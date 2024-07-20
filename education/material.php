@@ -57,7 +57,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Material Educativo sobre Enfermedades</p>
+        <p>@2024 Salud Accesible. Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
