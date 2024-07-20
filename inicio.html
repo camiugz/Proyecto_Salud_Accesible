@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Salud Accesible Ebais Dulce Nombre</title>
+    <link rel="stylesheet" href="./css/styles.css">\
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Salud Accesible Ebais Dulce Nombre</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="comunicacion.html">Comunicación</a></li>
+                <li><a href="gestionSalud">Gestión de la Salud</a></li>
+                <li><a href="educacionRecursos">Educación y Recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="./images/logo.jpg" alt="Logo Salud Accesible">
+        </section>
+        <section class="infro-general">
+            <h2>Bienvenidos a la aplicación web Salud Accesible del Ebais de Dulce Nombre de Cartago.</h2>
+            <p>Nuestra misión es mejorar la calidad de vida de los pacientes con enfermedades crónicas de nuestra comunidad.</p>
+        </section>
+        <section class="registro">
+            <h2>Registro</h2>
+            <div class="registro-opciones">
+                <h3>¿Cómo deseas registrarte?</h3>
+                <button onclick="location.href='registro-pacientes.html'">Registro de Pacientes</button>
+                <button onclick="location.href='registro-medicos.html'">Registro de Médicos</button>
+            </div>
+        </section>
+        <section class="acceso">
+            <h2>Acceso</h2>
+            <form class="login">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
+                
+                <label for="login-password">Contraseña:</label>
+                <input type="password" id="login-password" name="password" required>
+                
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Salud Accesible Ebais Dulce Nombre de Cartago.</p>
+    </footer>
+</body>
+
+</html>
