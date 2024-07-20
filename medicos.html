@@ -2,25 +2,35 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfiles de Médicos</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Salud Accesible Ebais Dulce Nombre</title>
+    <link rel="stylesheet" href="./css/styles.css">\
+    <script src="./js/script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Perfiles de Médicos</h1>
+        <h1>Salud Accesible Ebais Dulce Nombre</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="comunicacion.html">Comunicación</a></li>
+                <li><a href="gestionSalud">Gestión de la Salud</a></li>
+                <li><a href="educacionRecursos">Educación y Recursos</a></li>
+                <li><a href="perfil-usuario.html">Ver perfiles de usuarios</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <h2>Perfiles de médicos</h2>
         <section class="registro-opciones">
-            <h2>Selecciona un Perfil Médico</h2>
-            <button class="button" onclick="window.location.href='medico1.html'">Perfil Médico 1</button>
-            <button class="button" onclick="window.location.href='medico2.html'">Perfil Médico 2</button>
+            <h3>Seleccione el perfil del médico que desea accesar.</h3>
+            <button onclick="location.href='medico1.html'">Dr. Alejandro Hernandez Ramirez</button>
+            <button onclick="location.href='medico2.html'">Dra. Lucia Mata Moya</button>
         </section>
-        
-        <button class="button" onclick="window.history.back()">Volver</button>
+
+        <button onclick="history.back()">Volver</button>
     </main>
     <footer>
-        <p>&copy; 2024 Salud Accesible</p>
+        <p>&copy; 2024 Salud Accesible Ebais Dulce Nombre de Cartago.</p>
     </footer>
 </body>
 </html>
