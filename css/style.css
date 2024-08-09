@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Whitesmoke */
+}
+
+header {
+    background-color: #2A6DB0; /* Azul Marino */
+    color: #FFFFFF; /* Blanco */
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #FFFFFF; /* Blanco */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+nav ul li a:hover {
+    background-color: #76C7C0; /* Verde Claro */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #F0F4F8; /* Gris Claro */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #2A6DB0; /* Azul Marino */
+}
+
+p {
+    color: #4A4A4A; /* Gris Oscuro */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button[type="submit"] {
+    padding: 10px;
+    background-color: #2A6DB0; /* Azul Marino */
+    color: #FFFFFF; /* Blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #76C7C0; /* Verde Claro */
+}
+
+footer {
+    background-color: #2A6DB0; /* Azul Marino */
+    color: #FFFFFF; /* Blanco */
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.alerta {
+    color: #E57373; /* Rojo Suave */
+    font-weight: bold;
+}
+
+.resaltado {
+    background-color: #FFEB3B; /* Amarillo Suave */
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.boton-confirmacion {
+    background-color: #FFB74D; /* Naranja Suave */
+    color: #FFFFFF; /* Blanco */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-confirmacion:hover {
+    background-color: #FFB74D; /* Naranja Suave más oscuro */
+}
+
+.services {
+    padding: 20px 0;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-box {
+    margin: 10px;
+    padding: 20px;
+    background-color: #F5F5F5; /* Whitesmoke */
+    border-radius: 5px;
+    text-align: center;
+    max-width: 30%;
+}
+
+.service-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.service-box h3 {
+    margin: 10px 0;
+    color: #2A6DB0; /* Azul Marino */
+}
+
+.service-box p {
+    color: #4A4A4A; /* Gris Oscuro */
+}
+
+.registro-opciones {
+    text-align: center;
+}
+
+.registro-opciones button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #76C7C0; /* Verde Claro */
+    color: #FFFFFF; /* Blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registro-opciones button:hover {
+    background-color: #2A6DB0; /* Azul Marino */
+}

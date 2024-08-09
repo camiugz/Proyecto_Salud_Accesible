@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Salud Accesible Ebais Dulce Nombre</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Salud Accesible Ebais Dulce Nombre</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="comunicacion.html">Comunicación</a></li>
+                <li><a href="gestionSalud">Gestión de la Salud</a></li>
+                <li><a href="educacionRecursos">Educación y Recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Registro de Pacientes</h2>
+            <form action="Procesar.php" class="registro-pacientes">
+                <label for="id_paciente">id_paciente:</label>
+                <input type="number" id="id_paciente" name="id_paciente" required>
+
+                <label for="fecha">fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="peso">peso:</label>
+                <input type="double" id="peso" name="peso" required>
+
+                <label for="presion_arterial">presion_arterial:</label>
+                <input type="number" id="presion_arterial" name="presion_arterial" required>
+ 
+                <label for="glucosa">glucosa:</label>
+                <input type="number" id="glucosa" name="glucosa" required>
+ 
+
+                <div class="form-items">
+                    <input class="bt-st-ins" type="hidden" value="insertar" name="action" id="action">
+                    <input class="bt-st-ins" type="submit" name="submit" value="Insertar" class="btnInsertar">
+                </div>  
+
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Salud Accesible Ebais Dulce Nombre de Cartago.</p>
+    </footer>
+</body>
+
+</html>
