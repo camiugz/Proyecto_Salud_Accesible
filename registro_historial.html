@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Historial Médico</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Registro de Historial Médico</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro_salud.html">Registro de Datos de Salud</a></li>
+                <li><a href="registro_recordatorios.html">Registro de Recordatorios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="procesar.php" method="POST" class="registro-historial">
+                <label for="historial_id_paciente">ID Paciente:</label>
+                <input type="number" id="historial_id_paciente" name="id_paciente" required>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+
+                <label for="fecha_historial">Fecha:</label>
+                <input type="date" id="fecha_historial" name="fecha" required>
+
+                <input type="hidden" name="action" value="insertar_historial">
+                <button type="submit" class="bt-st-ins">Registrar Historial Médico</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Salud Accesible Ebais Dulce Nombre de Cartago.</p>
+    </footer>
+</body>
+
+</html>

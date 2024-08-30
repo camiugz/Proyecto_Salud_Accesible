@@ -1,51 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <title>Salud Accesible Ebais Dulce Nombre</title>
+    <title>Registro de Datos de Salud</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="./js/script.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Salud Accesible Ebais Dulce Nombre</h1>
+        <h1>Registro de Datos de Salud</h1>
         <nav>
             <ul>
-                <li><a href="inicio.html">Inicio</a></li>
-                <li><a href="comunicacion.html">Comunicación</a></li>
-                <li><a href="gestionSalud">Gestión de la Salud</a></li>
-                <li><a href="educacionRecursos">Educación y Recursos</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro_historial.html">Registro de Historial Médico</a></li>
+                <li><a href="registro_recordatorios.html">Registro de Recordatorios</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            <h2>Registro de Pacientes</h2>
-            <form action="Procesar.php" class="registro-pacientes">
-                <label for="id_paciente">id_paciente:</label>
+            <form action="procesar.php" method="POST" class="registro-pacientes">
+                <label for="id_paciente">ID Paciente:</label>
                 <input type="number" id="id_paciente" name="id_paciente" required>
 
-                <label for="fecha">fecha:</label>
+                <label for="fecha">Fecha:</label>
                 <input type="date" id="fecha" name="fecha" required>
 
-                <label for="peso">peso:</label>
-                <input type="double" id="peso" name="peso" required>
+                <label for="peso">Peso (kg):</label>
+                <input type="number" step="0.1" id="peso" name="peso" required>
 
-                <label for="presion_arterial">presion_arterial:</label>
-                <input type="number" id="presion_arterial" name="presion_arterial" required>
- 
-                <label for="glucosa">glucosa:</label>
+                <label for="presion_arterial">Presión Arterial:</label>
+                <input type="text" id="presion_arterial" name="presion_arterial" required>
+
+                <label for="glucosa">Glucosa:</label>
                 <input type="number" id="glucosa" name="glucosa" required>
- 
 
-                <div class="form-items">
-                    <input class="bt-st-ins" type="hidden" value="insertar" name="action" id="action">
-                    <input class="bt-st-ins" type="submit" name="submit" value="Insertar" class="btnInsertar">
-                </div>  
-
-
+                <input type="hidden" name="action" value="insertar_salud">
+                <button type="submit" class="bt-st-ins">Registrar Salud</button>
             </form>
         </section>
     </main>

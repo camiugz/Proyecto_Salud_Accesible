@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Recordatorios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Registro de Recordatorios</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro_salud.html">Registro de Datos de Salud</a></li>
+                <li><a href="registro_historial.html">Registro de Historial Médico</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="procesar.php" method="POST" class="registro-recordatorio">
+                <label for="recordatorio_id_paciente">ID Paciente:</label>
+                <input type="number" id="recordatorio_id_paciente" name="id_paciente" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <input type="text" id="mensaje" name="mensaje" required>
+
+                <label for="fecha_recordatorio">Fecha y Hora:</label>
+                <input type="datetime-local" id="fecha_recordatorio" name="fecha_recordatorio" required>
+
+                <label for="recurrente">Recurrente:</label>
+                <input type="checkbox" id="recurrente" name="recurrente" value="1">
+
+                <input type="hidden" name="action" value="insertar_recordatorio">
+                <button type="submit" class="bt-st-ins">Registrar Recordatorio</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Salud Accesible Ebais Dulce Nombre de Cartago.</p>
+    </footer>
+</body>
+
+</html>
